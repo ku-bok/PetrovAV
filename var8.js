@@ -6,8 +6,10 @@ for(let i = 0; i < array.length; i++){
     sum += array[i];
     }
 console.log(sum);
-for(let i = 0; i < array.length; i++){
+let i = 0;
+while(i < array.length){
     mul *= array[i];
+    i++;
     }    
 console.log(mul);
 }
