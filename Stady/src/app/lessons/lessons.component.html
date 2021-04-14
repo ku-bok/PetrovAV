@@ -1,0 +1,7 @@
+<p>Расписание</p>
+<div>
+    <div *ngFor="let lesson of lessons">
+    <div (click)=click(lesson.name)>{{lesson.name}}</div>
+    <div (click)=click(lesson.duration)>{{lesson.duration}}</div>
+</div>
+</div>
