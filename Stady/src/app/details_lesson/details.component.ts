@@ -1,20 +1,19 @@
-import {Component, Input, Output, OnInit, EventEmitter} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { LessonApiService } from '../services/api/lesson.service.api';
 import { Lesson } from '../models/lesson.model';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
-    selector:'app-lessons',
-    templateUrl: './lessons.component.html',
-    styleUrls: ['./lessons.component.scss'],
+    selector:'app-details',
+    templateUrl: './details.component.html',
+    styleUrls: ['./details.component.scss'],
     providers: [LessonApiService]
 })
 
-export class LessonsComponent implements OnInit {
-    @Output()
-    lessonSelected = new EventEmitter<number>();
-
-    constructor(private LessonApi: LessonApiService){}
+export class DetailsComponent implements OnInit {
+    constructor(private LessonApi: LessonApiService, private route: ActivatedRoute){
+       let id=this.route.snapshot.params['id']
+    }
 
     public lessons: Lesson[]=[];
 
@@ -26,6 +25,5 @@ export class LessonsComponent implements OnInit {
     }
 
     click(){
-    }
-    
+    }    
 }

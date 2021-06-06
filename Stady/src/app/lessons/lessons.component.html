@@ -1,7 +1,6 @@
 <p>Расписание</p>
 <div>
     <div *ngFor="let lesson of lessons">
-    <div>{{lesson.name}}</div>
-    <div>{{lesson.duration}}</div>
+    <div><a [routerLink]="['/details', lesson.id]">{{lesson.name}}</a></div>
 </div>
 </div>
