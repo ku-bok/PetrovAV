@@ -2,7 +2,7 @@
 <div>
     <div class="center" *ngFor="let lesson of lessons">
         <p>Дисциплина: {{lesson.name}}</p>
-        <p>Длительность занятия: {{lesson.duration}}</p>
+        <p>Длительность занятия: {{lesson.duration | format}}</p>
         <p>Количество занятий: {{lesson.count}}</p>
         <p>Преподаватель: {{lesson.teacher}}</p>
         <hr>

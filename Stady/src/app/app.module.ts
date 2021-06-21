@@ -8,13 +8,15 @@ import {DetailsComponent} from './details_lesson/details.component';
 import {HttpClientModule } from '@angular/common/http';
 import {FormComponent} from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormatPipe} from './details_lesson/format.pipe';
 
 @NgModule({
   declarations: [
     DetailsComponent,
     LessonsComponent,
     FormComponent,
-    AppComponent
+    AppComponent,
+    FormatPipe
   ],
   imports: [
     BrowserModule,
