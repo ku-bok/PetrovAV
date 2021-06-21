@@ -1,6 +1,8 @@
-<p>Расписание</p>
+<div class="center"><p>Расписание</p>
 <div>
     <div *ngFor="let lesson of lessons">
     <div><a [routerLink]="['/details', lesson.id]">{{lesson.name}}</a></div>
+</div>
+<a [routerLink]="['form']">Создание элемента</a>
 </div>
 </div>

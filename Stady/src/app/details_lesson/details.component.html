@@ -1,9 +1,11 @@
-<p>Подробности</p>
+<h1>Подробности</h1>
 <div>
-    <div *ngFor="let lesson of lessons">
-        <div>{{lesson.name}}</div>
-        <div>{{lesson.duration}}</div>
-        <div>{{lesson.count}}</div>
-        <div>{{lesson.teacher}}</div>
-</div>
+    <div class="center" *ngFor="let lesson of lessons">
+        <p>Дисциплина: {{lesson.name}}</p>
+        <p>Длительность занятия: {{lesson.duration}}</p>
+        <p>Количество занятий: {{lesson.count}}</p>
+        <p>Преподаватель: {{lesson.teacher}}</p>
+        <hr>
+    </div>
+<a [routerLink]="['/']">Назад</a>
 </div>
