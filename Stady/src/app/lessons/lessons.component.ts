@@ -14,7 +14,11 @@ export class LessonsComponent implements OnInit {
     @Output()
     lessonSelected = new EventEmitter<number>();
 
-    constructor(private LessonApi: LessonApiService){}
+    constructor(private LessonApi: LessonApiService){
+        this.LessonApi.getLessons(1).subscribe(data=>{
+            this.lessons=data;
+        }); 
+    }
 
     public lessons: Lesson[]=[];
 
@@ -26,6 +30,7 @@ export class LessonsComponent implements OnInit {
     }
 
     click(){
+        this.LessonApi.recalcLessonCount();
     }
     
 }

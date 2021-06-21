@@ -2,5 +2,6 @@
 {"id":1, "name":"Инструменты фронтенд разработки","duration":90, "count":18, "teacher":"Степанов Д.И."},
 {"id":2, "name":"Self и Soft компетенции","duration":70, "count":24, "teacher":"Хаминова А.А."},
 {"id":3, "name":"Проектирование информационных систем","duration":30, "count":17, "teacher":"Петелин А.Е."},
-{"id":4, "name":"Digital-дизайн","duration":50, "count":21, "teacher":"Вершинин В.А."}
+{"id":4, "name":"Digital-дизайн","duration":50, "count":21, "teacher":"Вершинин В.А."},
+{"id":5, "name":"Прототипирование интерфейсов","duration":60, "count":25, "teacher":"Шабалина Д.О."}
 ]
